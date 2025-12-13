@@ -1,3 +1,23 @@
+/Project
+│
+├── main.c
+├── system.c
+│
+├── i2c.c
+├── i2c.h
+│
+├── uart1.c
+├── uart1.h
+│
+├── lcd.c
+├── lcd.h
+│
+├── delay.c
+├── delay.h
+│
+├── types.h
+
+
 Excellent question 👍
 This goes to the **core of how I²C EEPROM works**.
 Let’s break it **slowly and clearly**.
