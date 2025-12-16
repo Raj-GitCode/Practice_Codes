@@ -12,7 +12,12 @@
 #define PREFRAC_VAL (PCLK - ((PREINT_VAL+1)*32768))
 
 #define RTC_ENABLE (1<<0) 
-#define RTC_RESET  (1<<1)   
+#define RTC_RESET  (1<<1)  
+
+[ PREINT ]  → big divider
+ [ PREFRAC ] → small correction
+        ↓
+ 1 tick per second
 
 #endif
 
