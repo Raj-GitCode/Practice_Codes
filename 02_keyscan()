@@ -4,15 +4,12 @@ char KeyScan(void)
     u32 rows[4] = {ROW0, ROW1, ROW2, ROW3};
     u32 cols[4] = {COL0, COL1, COL2, COL3};
 
-    /* STEP 1: Check if any key is pressed */
     if ((IOPIN1 & COLS_MASK) == COLS_MASK)
         return '\0';   // No key pressed
-
-    /* STEP 2: Find the row */
     for (row = 0; row < 4; row++)
     {
-        IOSET1 = ROWS_MASK;           // Make all rows HIGH
-        IOCLR1 = (1 << rows[row]);    // Make one row LOW
+        IOSET1 = ROWS_MASK;           
+        IOCLR1 = (1 << rows[row]);    
 
         for (col = 0; col < 4; col++)
         {
