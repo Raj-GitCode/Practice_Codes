@@ -19,6 +19,11 @@
         ↓
  1 tick per second
 
+CCR (Clock Control Register)
+Bit 1 : Reset
+Bit 0 : Enable
+
+
 #endif
 
 
